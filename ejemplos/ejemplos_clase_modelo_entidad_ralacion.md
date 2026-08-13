@@ -1,4 +1,4 @@
-# Práctica integradora — Diagramas Entidad-Relación
+#  Diagramas Entidad-Relación
 ---
 
 ## Instrucciones generales

@@ -1,4 +1,4 @@
-# Clase 18 — Subconsultas avanzadas y JOINs
+# Clase 15 — Subconsultas avanzadas y JOINs
 **Materia:** Modelo de Datos | **Semestre:** 4 | **Ingeniería de Sistemas**
 **Herramienta:** PostgreSQL + pgAdmin
 ---

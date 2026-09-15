@@ -1,4 +1,4 @@
-# Clase 19 — JOINs avanzados y Tablas derivadas
+# Clase 16 — JOINs avanzados y Tablas derivadas
 **Materia:** Modelo de Datos | **Semestre:** 4 | **Ingeniería de Sistemas**
 **Herramienta:** PostgreSQL + pgAdmin
 

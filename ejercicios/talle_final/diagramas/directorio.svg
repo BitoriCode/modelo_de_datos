@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title">
+    <title id="title">Directorio | entradas y consulta reutilizable</title>
+    <rect width="100%" height="100%" fill="white"/>
+    <g font-family="Arial, sans-serif">
+    <text x="30" y="34" font-size="23" font-weight="bold" fill="#152d42">Directorio | entradas y consulta reutilizable</text>
+    <path d="M350 434 H440 V434 H530"
+      fill="none" stroke="#51677d" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="440" y="422" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">consulta</text><g>
+    <rect x="30" y="80" width="320" height="139" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 80 H343 Q350 80 350 87
+      V118 H30 V87 Q30 80 37 80" fill="#244968"/>
+    <text x="190" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r2_entrada</text>
+    <text x="43" y="141" font-size="17" fill="#152d42">PK id_entrada : INTEGER</text>
+<text x="43" y="170" font-size="17" fill="#152d42">codigo : TEXT NULL</text>
+<text x="43" y="199" font-size="17" fill="#152d42">nombre : TEXT</text>
+    </g>
+<g>
+    <rect x="30" y="350" width="320" height="168" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 350 H343 Q350 350 350 357
+      V388 H30 V357 Q30 350 37 350" fill="#244968"/>
+    <text x="190" y="375" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r12_proveedor</text>
+    <text x="43" y="411" font-size="17" fill="#152d42">PK id_proveedor : INTEGER</text>
+<text x="43" y="440" font-size="17" fill="#152d42">nombre : TEXT</text>
+<text x="43" y="469" font-size="17" fill="#152d42">ciudad : TEXT</text>
+<text x="43" y="498" font-size="17" fill="#152d42">contacto_interno : TEXT</text>
+    </g>
+<g>
+    <rect x="530" y="350" width="350" height="168" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M537 350 H873 Q880 350 880 357
+      V388 H530 V357 Q530 350 537 350" fill="#244968"/>
+    <text x="705" y="375" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r12_directorio (vista)</text>
+    <text x="543" y="411" font-size="17" fill="#152d42">id_proveedor : INTEGER</text>
+<text x="543" y="440" font-size="17" fill="#152d42">nombre : TEXT</text>
+<text x="543" y="469" font-size="17" fill="#152d42">ciudad : TEXT</text>
+<text x="543" y="498" font-size="17" fill="#152d42">contacto_interno : TEXT</text>
+    </g>
+    <text x="420" y="110" font-size="18">Esquema: mt_directorio</text>
+    <text x="420" y="150" font-size="18">La vista inicial incluye una columna ajena al reporte.</text>
+    <text x="420" y="190" font-size="18">Linea discontinua: dependencia de consulta, no FK.</text>
+    </g></svg>

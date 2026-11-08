@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1010" viewBox="0 0 1120 1010" role="img" aria-labelledby="title">
+    <title id="title">Reparaciones | estados separados para cada reto</title>
+    <rect width="100%" height="100%" fill="white"/>
+    <g font-family="Arial, sans-serif">
+    <text x="30" y="34" font-size="23" font-weight="bold" fill="#152d42">Reparaciones | estados separados para cada reto</text>
+    <path d="M330 135 H400 V164 H470"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="400" y="137.5" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..N</text>
+<path d="M330 815 H400 V705 H470"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="400" y="748" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..1</text>
+<path d="M330 815 H400 V899.5 H470"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="400" y="845.25" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..N</text><g>
+    <rect x="30" y="80" width="300" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 80 H323 Q330 80 330 87
+      V118 H30 V87 Q30 80 37 80" fill="#244968"/>
+    <text x="180" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r6_orden</text>
+    <text x="43" y="141" font-size="17" fill="#152d42">PK id_orden : INTEGER</text>
+<text x="43" y="170" font-size="17" fill="#152d42">estado : TEXT</text>
+    </g>
+<g>
+    <rect x="470" y="80" width="320" height="168" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M477 80 H783 Q790 80 790 87
+      V118 H470 V87 Q470 80 477 80" fill="#244968"/>
+    <text x="630" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r6_auditoria</text>
+    <text x="483" y="141" font-size="17" fill="#152d42">PK id_auditoria : IDENTITY</text>
+<text x="483" y="170" font-size="17" fill="#152d42">FK id_orden : INTEGER</text>
+<text x="483" y="199" font-size="17" fill="#152d42">antes : TEXT</text>
+<text x="483" y="228" font-size="17" fill="#152d42">despues : TEXT</text>
+    </g>
+<g>
+    <rect x="30" y="380" width="330" height="168" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 380 H353 Q360 380 360 387
+      V418 H30 V387 Q30 380 37 380" fill="#244968"/>
+    <text x="195" y="405" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r10_orden</text>
+    <text x="43" y="441" font-size="17" fill="#152d42">PK id_orden : INTEGER</text>
+<text x="43" y="470" font-size="17" fill="#152d42">costo_base : NUMERIC(10,2)</text>
+<text x="43" y="499" font-size="17" fill="#152d42">total_final : NUMERIC(10,2) NULL</text>
+<text x="43" y="528" font-size="17" fill="#152d42">estado : TEXT</text>
+    </g>
+<g>
+    <rect x="30" y="760" width="300" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 760 H323 Q330 760 330 767
+      V798 H30 V767 Q30 760 37 760" fill="#244968"/>
+    <text x="180" y="785" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r11_orden</text>
+    <text x="43" y="821" font-size="17" fill="#152d42">PK id_orden : INTEGER</text>
+<text x="43" y="850" font-size="17" fill="#152d42">estado : TEXT</text>
+    </g>
+<g>
+    <rect x="470" y="650" width="320" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M477 650 H783 Q790 650 790 657
+      V688 H470 V657 Q470 650 477 650" fill="#244968"/>
+    <text x="630" y="675" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r11_borrador</text>
+    <text x="483" y="711" font-size="17" fill="#152d42">PK/FK id_orden : INTEGER</text>
+<text x="483" y="740" font-size="17" fill="#152d42">detalle : TEXT</text>
+    </g>
+<g>
+    <rect x="470" y="830" width="320" height="139" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M477 830 H783 Q790 830 790 837
+      V868 H470 V837 Q470 830 477 830" fill="#244968"/>
+    <text x="630" y="855" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r11_movimiento</text>
+    <text x="483" y="891" font-size="17" fill="#152d42">PK id_movimiento : IDENTITY</text>
+<text x="483" y="920" font-size="17" fill="#152d42">FK id_orden : INTEGER</text>
+<text x="483" y="949" font-size="17" fill="#152d42">concepto : TEXT</text>
+    </g><text x="30" y="320" font-size="18">Esquema: mt_reparaciones. r6, r10 y r11 no comparten ordenes.</text>
+    <text x="420" y="420" font-size="18">El reto 10 usa sus propias rutinas y datos.</text>
+    <text x="420" y="460" font-size="18">El costo base no se sobrescribe al cerrar.</text>
+    </g></svg>

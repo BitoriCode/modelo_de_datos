@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="970" viewBox="0 0 1120 970" role="img" aria-labelledby="title">
+    <title id="title">Mensajeria | tres incidentes, tres conjuntos de tablas</title>
+    <rect width="100%" height="100%" fill="white"/>
+    <g font-family="Arial, sans-serif">
+    <text x="30" y="34" font-size="23" font-weight="bold" fill="#152d42">Mensajeria | tres incidentes, tres conjuntos de tablas</text>
+    <path d="M330 149.5 H390 V149.5 H450"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="390" y="137.5" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..N</text>
+<path d="M310 415 H370 V345 H430"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="370" y="368" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..N</text>
+<path d="M310 415 H370 V550.5 H430"
+      fill="none" stroke="#51677d" stroke-width="2" />
+      <text x="370" y="470.75" text-anchor="middle" font-size="16"
+      fill="#243b53" paint-order="stroke" stroke="white" stroke-width="5">1 : 0..1</text><g>
+    <rect x="30" y="80" width="300" height="139" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 80 H323 Q330 80 330 87
+      V118 H30 V87 Q30 80 37 80" fill="#244968"/>
+    <text x="180" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r4_envio</text>
+    <text x="43" y="141" font-size="17" fill="#152d42">PK id_envio : INTEGER</text>
+<text x="43" y="170" font-size="17" fill="#152d42">cliente : TEXT</text>
+<text x="43" y="199" font-size="17" fill="#152d42">importe : NUMERIC(10,2)</text>
+    </g>
+<g>
+    <rect x="450" y="80" width="300" height="139" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M457 80 H743 Q750 80 750 87
+      V118 H450 V87 Q450 80 457 80" fill="#244968"/>
+    <text x="600" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r4_evento</text>
+    <text x="463" y="141" font-size="17" fill="#152d42">PK id_evento : INTEGER</text>
+<text x="463" y="170" font-size="17" fill="#152d42">FK id_envio : INTEGER</text>
+<text x="463" y="199" font-size="17" fill="#152d42">estado : TEXT</text>
+    </g>
+<g>
+    <rect x="30" y="360" width="280" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 360 H303 Q310 360 310 367
+      V398 H30 V367 Q30 360 37 360" fill="#244968"/>
+    <text x="170" y="385" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r7_cliente</text>
+    <text x="43" y="421" font-size="17" fill="#152d42">PK id_cliente : INTEGER</text>
+<text x="43" y="450" font-size="17" fill="#152d42">nombre : TEXT</text>
+    </g>
+<g>
+    <rect x="430" y="290" width="290" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M437 290 H713 Q720 290 720 297
+      V328 H430 V297 Q430 290 437 290" fill="#244968"/>
+    <text x="575" y="315" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r7_aviso</text>
+    <text x="443" y="351" font-size="17" fill="#152d42">PK id_aviso : INTEGER</text>
+<text x="443" y="380" font-size="17" fill="#152d42">FK id_cliente : INTEGER NULL</text>
+    </g>
+<g>
+    <rect x="430" y="510" width="290" height="81" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M437 510 H713 Q720 510 720 517
+      V548 H430 V517 Q430 510 437 510" fill="#244968"/>
+    <text x="575" y="535" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r7_baja</text>
+    <text x="443" y="571" font-size="17" fill="#152d42">PK/FK id_cliente : INTEGER</text>
+    </g>
+<g>
+    <rect x="30" y="740" width="320" height="139" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 740 H343 Q350 740 350 747
+      V778 H30 V747 Q30 740 37 740" fill="#244968"/>
+    <text x="190" y="765" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r9_guia</text>
+    <text x="43" y="801" font-size="17" fill="#152d42">PK id_guia : INTEGER</text>
+<text x="43" y="830" font-size="17" fill="#152d42">fecha : DATE</text>
+<text x="43" y="859" font-size="17" fill="#152d42">importe : NUMERIC(10,2)</text>
+    </g><text x="790" y="110" font-size="18">Esquema: mt_mensajeria</text>
+    <text x="790" y="150" font-size="17">Cada evento tiene un envio.</text>
+    <text x="770" y="340" font-size="17">Un aviso puede no tener</text>
+    <text x="770" y="370" font-size="17">cliente asignado (NULL).</text>
+    <text x="420" y="800" font-size="18">r9_guia no depende de r4 ni de r7.</text>
+    <text x="420" y="840" font-size="18">Las aristas indican referencias reales.</text>
+    </g></svg>

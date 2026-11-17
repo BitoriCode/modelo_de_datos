@@ -1,0 +1,90 @@
+{
+  "algebra_setup.sql": {
+    "nombre": "Álgebra: people y products",
+    "filas": {
+      "people": 8,
+      "products": 7
+    }
+  },
+  "aeropass_intro_setup.sql": {
+    "nombre": "AeroPass introductorio, sin precio_cop",
+    "filas": {
+      "aerolinea": 3,
+      "pasajero": 4,
+      "vuelo": 4,
+      "reserva": 5
+    }
+  },
+  "aeropass_setup.sql": {
+    "nombre": "AeroPass con precios, para SELECT y JOINs",
+    "filas": {
+      "aerolinea": 3,
+      "pasajero": 8,
+      "vuelo": 8,
+      "reserva": 20
+    }
+  },
+  "techdist_setup.sql": {
+    "nombre": "TechDist, ejercicios de SELECT y DML",
+    "filas": {
+      "productos": 12,
+      "ventas": 25
+    }
+  },
+  "medicare_setup.sql": {
+    "nombre": "MediCare, JOINs avanzados",
+    "filas": {
+      "especialidad": 4,
+      "medico": 10,
+      "paciente": 13,
+      "turno": 33
+    }
+  },
+  "cineplay_setup.sql": {
+    "nombre": "CinePlay, CTEs",
+    "filas": {
+      "genero": 6,
+      "plan": 3,
+      "pelicula": 12,
+      "usuario": 10,
+      "reproduccion": 25
+    }
+  },
+  "shopeasy_setup.sql": {
+    "nombre": "ShopEasy, índices y planes",
+    "filas": {
+      "categoria": 8,
+      "producto": 14,
+      "cliente": 10,
+      "pedido": 18,
+      "detalle_pedido": 30
+    }
+  },
+  "staffhub_setup.sql": {
+    "nombre": "StaffHub, funciones y programación",
+    "filas": {
+      "departamento": 4,
+      "empleado": 12,
+      "cargo": 12
+    }
+  },
+  "urbanbike_setup.sql": {
+    "nombre": "UrbanBike, DML avanzado",
+    "filas": {
+      "estacion": 6,
+      "bicicleta": 10,
+      "cliente": 8,
+      "viaje": 21
+    }
+  },
+  "megataller_setup.sql": {
+    "nombre": "Megataller, escenarios defectuosos de repaso",
+    "esquemas": [
+      "mt_museo",
+      "mt_mensajeria",
+      "mt_reparaciones",
+      "mt_directorio"
+    ],
+    "reinicio": "base_nueva"
+  }
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="545" viewBox="0 0 1120 545" role="img" aria-labelledby="title">
+    <title id="title">Museo | estado inicial de los retos 5 y 8</title>
+    <rect width="100%" height="100%" fill="white"/>
+    <g font-family="Arial, sans-serif">
+    <text x="30" y="34" font-size="23" font-weight="bold" fill="#152d42">Museo | estado inicial de los retos 5 y 8</text>
+    <g>
+    <rect x="30" y="80" width="340" height="255" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M37 80 H363 Q370 80 370 87
+      V118 H30 V87 Q30 80 37 80" fill="#244968"/>
+    <text x="200" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r5_ficha</text>
+    <text x="43" y="141" font-size="17" fill="#152d42">id_pieza : INTEGER</text>
+<text x="43" y="170" font-size="17" fill="#152d42">numero_ficha : INTEGER</text>
+<text x="43" y="199" font-size="17" fill="#152d42">titulo : TEXT</text>
+<text x="43" y="228" font-size="17" fill="#152d42">id_sala : INTEGER</text>
+<text x="43" y="257" font-size="17" fill="#152d42">nombre_sala : TEXT</text>
+<text x="43" y="286" font-size="17" fill="#152d42">etiquetas : TEXT</text>
+<text x="43" y="315" font-size="17" fill="#152d42">texto_ficha : TEXT</text>
+    </g>
+<g>
+    <rect x="440" y="80" width="280" height="110" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M447 80 H713 Q720 80 720 87
+      V118 H440 V87 Q440 80 447 80" fill="#244968"/>
+    <text x="580" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r8_sala</text>
+    <text x="453" y="141" font-size="17" fill="#152d42">PK id_sala : INTEGER</text>
+<text x="453" y="170" font-size="17" fill="#152d42">nombre : TEXT NOT NULL</text>
+    </g>
+<g>
+    <rect x="790" y="80" width="300" height="197" rx="7" fill="#f7fafc" stroke="#51677d" stroke-width="2"/>
+    <path d="M797 80 H1083 Q1090 80 1090 87
+      V118 H790 V87 Q790 80 797 80" fill="#244968"/>
+    <text x="940" y="105" text-anchor="middle" font-size="17" font-weight="bold" fill="white">r8_registro_inseguro</text>
+    <text x="803" y="141" font-size="17" fill="#152d42">id_registro : INTEGER</text>
+<text x="803" y="170" font-size="17" fill="#152d42">id_sala : INTEGER</text>
+<text x="803" y="199" font-size="17" fill="#152d42">codigo : TEXT</text>
+<text x="803" y="228" font-size="17" fill="#152d42">fragilidad : NUMERIC(4,1)</text>
+<text x="803" y="257" font-size="17" fill="#152d42">estado : TEXT</text>
+    </g>
+  <text x="30" y="390" font-size="18">Esquema: mt_museo. Las tablas r5 y r8 son independientes.</text>
+  <text x="30" y="425" font-size="18">r5_ficha y r8_registro_inseguro no tienen restricciones declaradas.</text>
+  <text x="30" y="460" font-size="18">La referencia a sala en el formulario es un contrato pendiente, no una FK existente.</text>
+  <text x="30" y="495" font-size="18">r8_registro_corregido debe crearse en el reto 8; no forma parte del estado inicial.</text>
+    </g></svg>

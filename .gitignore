@@ -1,0 +1,24 @@
+# Solo se publica la unidad de notas para estudiantes.
+# Los archivos nuevos fuera de esta lista quedan ignorados por defecto.
+/*
+!/.gitignore
+!/notas_estudiantes/
+
+# Configuracion local, credenciales y archivos temporales, tambien dentro de notas.
+**/.env
+**/.env.*
+**/.git/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.ipynb_checkpoints/
+**/.vscode/
+**/.idea/
+**/.DS_Store
+**/Thumbs.db
+**/Desktop.ini
+**/~$*
+**/*.tmp
+**/*.bak
+**/*.swp
